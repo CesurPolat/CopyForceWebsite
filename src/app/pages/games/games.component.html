@@ -1,0 +1,115 @@
+<nz-carousel nzAutoPlay [nzEffect]="'fade'" style="height: 320px;margin-top: 44px;">
+    <div nz-carousel-content *ngFor="let index of array">
+        <h3>{{ index }}</h3>
+    </div>
+</nz-carousel>
+
+<h1 class="cf-title">My Library</h1>
+<div class="scroll-view">
+    <div *ngFor="let game of games;let i =index"  >
+        <div [ngClass]="{showSubGame:i==selectedIndex && toggleGameDesc}" class="game-view" [id]="i" (click)="toggleGame()" (mouseenter)="changeSelectedIndex(i)">
+            <img  width="100%" height="100%" src="http://localhost:8000/{{game.thumbnail}}">
+            <div *ngIf="!toggleGameDesc" class="sub-game-view">{{game.name}}<i nz-icon nzType="down" nzTheme="outline"></i></div>
+        </div>
+    </div>
+</div>
+<div class="hide-description" [ngClass]="{showDescription:toggleGameDesc}">
+    <div style="width: 40%;">
+        <h1 class="cf-title">{{selectedData?.name}}</h1>
+        <a class="cf-btn" href="game/{{selectedData?.name}}">PLAY</a>
+    </div>
+    <div style="width: 60%;">
+        <nz-carousel [nzEffect]="'fade'" style="height: 100%;">
+            <div nz-carousel-content *ngFor="let index of array">
+                <h3>{{ index }}</h3>
+            </div>
+        </nz-carousel>
+    </div>
+
+</div>
+
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>
+<h1>a</h1>

@@ -1,0 +1,114 @@
+$game-carousel-height:320px;
+
+[nz-carousel-content] {
+    text-align: center;
+    height: $game-carousel-height;
+    line-height: 160px;
+    background: #364d79;
+    color: #fff;
+    overflow: hidden;
+}
+
+::ng-deep .ant-carousel .slick-dots li{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+::ng-deep .ant-carousel .slick-dots li.slick-active button{
+    background-color: #76b900;
+}
+
+::ng-deep .ant-carousel .slick-dots li button{
+    background-color: #636363;
+    box-shadow: 1px 1px #000000e6;
+    border-radius: 0;
+    width: 32px;
+    height: 6px;
+}
+
+::ng-deep .ant-dropdown-menu{
+    background-color: #393939;
+    .ant-dropdown-menu-item, .ant-dropdown-menu-submenu-title{
+        color: #ffffffb3;
+        &:hover{
+            background-color: #ffffff0a;
+        }
+    }
+}
+
+.scroll-view{
+    display: flex;
+}
+
+.sub-game-view{
+    display: none;
+    background-color: #292929;
+    color:#ffffffb3;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.hide-description{
+    height: 0px;
+    overflow: hidden;
+    color: white;
+    margin-top: 5px;
+    display: flex;
+    transition: .3s;
+}
+
+.showDescription{
+    height: $game-carousel-height;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.showSubGame{
+    width: 272px !important;
+    height: 153px !important;
+    img{
+        border-bottom:5px solid #76b900;
+
+    }
+}
+
+.cf-btn{
+    background-color: #76b900;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px;
+    padding: 5px;
+    outline: none;
+    &:hover{
+        background-color: #6ba800;
+
+    }
+}
+
+.game-view{
+    width: 272px;
+    height: 153px;
+    padding: 10px;
+    transition: .1s;
+
+    &:hover{
+        opacity: 1;
+        width: 300px;
+        height: 180px;
+
+        .sub-game-view{
+            display: flex;
+        }
+
+        transition: .1s;
+    }
+}
+
+h3 {
+    color: #fff;
+    margin-bottom: 0;
+    user-select: none;
+}

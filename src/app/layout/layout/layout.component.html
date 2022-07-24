@@ -1,0 +1,25 @@
+<div class="navbar">
+    <div class="leftSide">
+      <i nz-icon nzType="menu" nzTheme="outline"></i>
+      <p>Games</p>
+    </div>
+    <div>
+      <input>
+    </div>
+    <div>
+      <p nz-dropdown nzTrigger="click" [nzDropdownMenu]="menu">
+        <i nz-icon nzType="user" nzTheme="outline"></i>
+        Cesur Polat
+        <i nz-icon nzType="down"></i>
+      </p>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>Account</li>
+          <li nz-menu-item>Log out</li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+  <div style="margin-top: 44px;">
+  </div>
